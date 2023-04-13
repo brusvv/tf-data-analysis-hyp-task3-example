@@ -7,7 +7,7 @@ from scipy.stats import mannwhitneyu
 chat_id = 5437824033   # Ваш chat ID, не меняйте название переменной
 
 def solution(x: np.array, y: np.array) -> bool: # Одна или две выборке на входе, заполняется исходя из условия
-    alpha = 0.06
+    alpha = 0.02
     stat, p = mannwhitneyu(x, y, alternative='greater')
     
     if p < alpha:
